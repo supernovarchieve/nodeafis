@@ -1,0 +1,12 @@
+nodeAFIS — TypeScript port of the SourceAFIS fingerprint matcher.
+
+Derived from SourceAFIS for Java 3.18.1
+https://github.com/robertvazan/sourceafis-java
+Copyright Robert Vazan and contributors
+Licensed under the Apache License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+Modifications: translated Java sources (engine.matcher, engine.templates,
+engine.features, engine.primitives, engine.extractor, engine.extractor.skeletons)
+to TypeScript for Node.js, with a minimal CBOR codec replacing
+jackson-dataformat-cbor and a minimal PNG/PGM decoder replacing ImageIO.
