@@ -7,11 +7,12 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "node test/selfcheck.js",
-    "parity": "node test/parity-vs-sidecar.js",
-    "parity:extract": "node test/parity-extract.js"
-  },
+  "build": "tsc",
+  "prepare": "npm run build",
+  "test": "node test/selfcheck.js",
+  "parity": "node test/parity-vs-sidecar.js",
+  "parity:extract": "node test/parity-extract.js"
+},
   "engines": {
     "node": ">=18"
   },
